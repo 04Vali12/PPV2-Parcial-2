@@ -1468,7 +1468,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e75fa896a1f694d3b80f18bdc59cef94, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ActiveSlot: 0
+  ActiveSlot: 1
   Slots: {fileID: 584969619}
   InventorySlots:
   - {fileID: 862352337}
