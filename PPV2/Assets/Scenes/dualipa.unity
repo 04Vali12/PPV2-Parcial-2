@@ -519,13 +519,41 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 3527463924921538514, guid: 401ef0e576d7e4bc9bf25c3b34424044, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 452382452}
   m_SourcePrefab: {fileID: 100100000, guid: 401ef0e576d7e4bc9bf25c3b34424044, type: 3}
 --- !u!224 &452382450 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 2512707580234608324, guid: 401ef0e576d7e4bc9bf25c3b34424044, type: 3}
   m_PrefabInstance: {fileID: 452382449}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &452382451 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3527463924921538514, guid: 401ef0e576d7e4bc9bf25c3b34424044, type: 3}
+  m_PrefabInstance: {fileID: 452382449}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &452382452
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 452382451}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bee51d24a08df4902a81abeea07d94bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Lection: 5
+  CurrentLession: 1
+  TotalLessions: 5
+  AreaAllLessonsComplete: 0
+  StageTitle: {fileID: 597816664}
+  LessonStage: {fileID: 1558480093}
+  lessonContainer: {fileID: 1143009046}
+  LessonData: {fileID: 0}
 --- !u!1 &538794232
 GameObject:
   m_ObjectHideFlags: 0
@@ -755,13 +783,41 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 3527463924921538514, guid: 401ef0e576d7e4bc9bf25c3b34424044, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 596450466}
   m_SourcePrefab: {fileID: 100100000, guid: 401ef0e576d7e4bc9bf25c3b34424044, type: 3}
 --- !u!224 &596450464 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 2512707580234608324, guid: 401ef0e576d7e4bc9bf25c3b34424044, type: 3}
   m_PrefabInstance: {fileID: 596450463}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &596450465 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3527463924921538514, guid: 401ef0e576d7e4bc9bf25c3b34424044, type: 3}
+  m_PrefabInstance: {fileID: 596450463}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &596450466
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 596450465}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bee51d24a08df4902a81abeea07d94bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Lection: 2
+  CurrentLession: 1
+  TotalLessions: 5
+  AreaAllLessonsComplete: 0
+  StageTitle: {fileID: 597816664}
+  LessonStage: {fileID: 1558480093}
+  lessonContainer: {fileID: 1143009046}
+  LessonData: {fileID: 0}
 --- !u!1 &597816662
 GameObject:
   m_ObjectHideFlags: 0
@@ -774,7 +830,7 @@ GameObject:
   - component: {fileID: 597816665}
   - component: {fileID: 597816664}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: Selection Title
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -991,13 +1047,41 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 3527463924921538514, guid: 401ef0e576d7e4bc9bf25c3b34424044, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 737184852}
   m_SourcePrefab: {fileID: 100100000, guid: 401ef0e576d7e4bc9bf25c3b34424044, type: 3}
 --- !u!224 &737184850 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 2512707580234608324, guid: 401ef0e576d7e4bc9bf25c3b34424044, type: 3}
   m_PrefabInstance: {fileID: 737184849}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &737184851 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3527463924921538514, guid: 401ef0e576d7e4bc9bf25c3b34424044, type: 3}
+  m_PrefabInstance: {fileID: 737184849}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &737184852
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 737184851}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bee51d24a08df4902a81abeea07d94bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Lection: 4
+  CurrentLession: 1
+  TotalLessions: 5
+  AreaAllLessonsComplete: 0
+  StageTitle: {fileID: 597816664}
+  LessonStage: {fileID: 1558480093}
+  lessonContainer: {fileID: 1143009046}
+  LessonData: {fileID: 0}
 --- !u!1 &801668040
 GameObject:
   m_ObjectHideFlags: 0
@@ -1495,7 +1579,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1143009047
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1974,7 +2058,7 @@ GameObject:
   - component: {fileID: 1558480094}
   - component: {fileID: 1558480093}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: LessonStage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2521,13 +2605,41 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 3527463924921538514, guid: 401ef0e576d7e4bc9bf25c3b34424044, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2051386458}
   m_SourcePrefab: {fileID: 100100000, guid: 401ef0e576d7e4bc9bf25c3b34424044, type: 3}
 --- !u!224 &2051386456 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 2512707580234608324, guid: 401ef0e576d7e4bc9bf25c3b34424044, type: 3}
   m_PrefabInstance: {fileID: 2051386455}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2051386457 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3527463924921538514, guid: 401ef0e576d7e4bc9bf25c3b34424044, type: 3}
+  m_PrefabInstance: {fileID: 2051386455}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2051386458
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2051386457}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bee51d24a08df4902a81abeea07d94bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Lection: 3
+  CurrentLession: 1
+  TotalLessions: 5
+  AreaAllLessonsComplete: 0
+  StageTitle: {fileID: 597816664}
+  LessonStage: {fileID: 1558480093}
+  lessonContainer: {fileID: 1143009046}
+  LessonData: {fileID: 0}
 --- !u!1001 &4075775665680904308
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2623,13 +2735,41 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 3527463924921538514, guid: 401ef0e576d7e4bc9bf25c3b34424044, type: 3}
+      insertIndex: 3
+      addedObject: {fileID: 4075775665680904311}
   m_SourcePrefab: {fileID: 100100000, guid: 401ef0e576d7e4bc9bf25c3b34424044, type: 3}
 --- !u!224 &4075775665680904309 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 2512707580234608324, guid: 401ef0e576d7e4bc9bf25c3b34424044, type: 3}
   m_PrefabInstance: {fileID: 4075775665680904308}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &4075775665680904310 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3527463924921538514, guid: 401ef0e576d7e4bc9bf25c3b34424044, type: 3}
+  m_PrefabInstance: {fileID: 4075775665680904308}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &4075775665680904311
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4075775665680904310}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bee51d24a08df4902a81abeea07d94bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Lection: 1
+  CurrentLession: 1
+  TotalLessions: 5
+  AreaAllLessonsComplete: 0
+  StageTitle: {fileID: 597816664}
+  LessonStage: {fileID: 1558480093}
+  lessonContainer: {fileID: 1143009046}
+  LessonData: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
