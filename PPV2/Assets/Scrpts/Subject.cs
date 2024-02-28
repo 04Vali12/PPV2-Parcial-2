@@ -10,4 +10,4 @@ public class Subject : ScriptableObject
     public int Lesson = 0;
     [Header("Lession Quest Configuration")]
     public List<Leccion> leccionList;
-}
+} 

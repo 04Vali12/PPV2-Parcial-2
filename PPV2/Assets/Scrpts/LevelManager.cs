@@ -36,6 +36,7 @@ public class LevelManager : MonoBehaviour
             currentLesson = Lesson.leccionList[currentQuestion];
             question = currentLesson.options[currentLesson.CorrectAnswer];
             CorrectAnswer = currentLesson.options[currentLesson.CorrectAnswer];
+            QuestionTxt.text = question
         }
         else
         {
