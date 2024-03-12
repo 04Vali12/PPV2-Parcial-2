@@ -26,8 +26,9 @@ public class LevelManager : MonoBehaviour
     public int answerfromPlayer = 9;
     public GameObject AnswerContainer;
     public int currentAnswer;
-    public int questiongood;
-
+    public TMP_Text questiongood;
+    public Color red;
+    public Color green;
     [Header("Current Lesson")]
     public Leccion currentLesson;
 
@@ -74,7 +75,7 @@ public class LevelManager : MonoBehaviour
     }
     public void NextQuestion()
     {
-        if (CheckPlayerState)
+        if (CheckPlayerState())
         {
             if (currentQuestion < questionAmount)
             {
@@ -83,16 +84,16 @@ public class LevelManager : MonoBehaviour
                 if (isCorrect)
                 {
                     AnswerContainer.GetComponent<Image>().color = Color.green;
-                    CorrectAnswer.text = "Respuesta Correcta" + ": " + CorrectAnswer;
+                    questiongood.text = "Respuesta Correcta" + ": " + CorrectAnswer;
                 }
                 else
                 {
                     AnswerContainer.GetComponent<Image>().color = red;
-                    CorrectAnswer.text = "Respuesta Incorrecta" + "Correcta" + ": " + CorrectAnswer;
+                    questiongood.text = "Respuesta Incorrecta" + "Correcta" + ": " + CorrectAnswer;
                 }
                 currentQuestion++;
                 StartCoroutine(ShowResultAndLoadQuestion(isCorrect));
-                CorrectAnswer = 9;
+               answerfromPlayer = 9;
             }
             else
             {
