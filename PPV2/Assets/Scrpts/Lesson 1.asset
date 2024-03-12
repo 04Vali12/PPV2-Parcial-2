@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 0}
   m_Name: Lesson 1
   m_EditorClassIdentifier: Assembly-CSharp::Subject
+  Lesson: 0
   leccionList:
   - ID: 0
     lessons: "\xBFQu\xE9 es una Variable?"
@@ -21,7 +22,7 @@ MonoBehaviour:
     - "S\xEDmbolo"
     - Tipo
     - Contenedor
-    CorrectAnswer: 4
+    CorrectAnswer: 0
   - ID: 1
     lessons: "\xBFQu\xE9 es una funci\xF3n?"
     options:

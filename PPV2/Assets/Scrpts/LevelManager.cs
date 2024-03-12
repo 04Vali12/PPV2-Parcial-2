@@ -26,6 +26,7 @@ public class LevelManager : MonoBehaviour
     public int answerfromPlayer = 9;
     public GameObject AnswerContainer;
     public int currentAnswer;
+    public int questiongood;
 
     [Header("Current Lesson")]
     public Leccion currentLesson;
@@ -73,16 +74,32 @@ public class LevelManager : MonoBehaviour
     }
     public void NextQuestion()
     {
-        if (currentQuestion < questionAmount)
+        if (CheckPlayerState)
         {
-            bool isCorrect = currentLesson.options[answerfromPlayer] == CorrectAnswer;
-            AnswerContainer.SetActive(true);
-            if (isCorrect)
+            if (currentQuestion < questionAmount)
             {
-                AnswerContainer.GetComponent<Image>().color = Color.green;
-                Debug.Log("Respuesta Correcta" + question + ": " + currentAnswer);
+                bool isCorrect = currentLesson.options[answerfromPlayer] == CorrectAnswer;
+                AnswerContainer.SetActive(true);
+                if (isCorrect)
+                {
+                    AnswerContainer.GetComponent<Image>().color = Color.green;
+                    CorrectAnswer.text = "Respuesta Correcta" + ": " + CorrectAnswer;
+                }
+                else
+                {
+                    AnswerContainer.GetComponent<Image>().color = red;
+                    CorrectAnswer.text = "Respuesta Incorrecta" + "Correcta" + ": " + CorrectAnswer;
+                }
+                currentQuestion++;
+                StartCoroutine(ShowResultAndLoadQuestion(isCorrect));
+                CorrectAnswer = 9;
+            }
+            else
+            {
+
             }
         }
+       
     }
     public void SetPlayerAnswer(int _answer)
     {
@@ -90,6 +107,7 @@ public class LevelManager : MonoBehaviour
     }
     public bool CheckPlayerState()
     {
+        
         if (answerfromPlayer != 9)
         {
             CheckButton.GetComponent<Button>().interactable = false;
@@ -102,6 +120,14 @@ public class LevelManager : MonoBehaviour
             CheckButton.GetComponent<Image>().color = Color.white;
             return false;
         }
+    }
+    private IEnumerator ShowResultAndLoadQuestion(bool isCorrect)
+    {
+        yield return new WaitForSeconds(2.5f);
+        AnswerContainer.SetActive(false);
+        LoadQuestion();
+
+        CheckPlayerState();
     }
 
 }
