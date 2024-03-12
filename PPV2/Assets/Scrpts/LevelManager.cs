@@ -58,7 +58,7 @@ public class LevelManager : MonoBehaviour
         if (currentQuestion < questionAmount)
         {
             currentLesson = Lesson.leccionList[currentQuestion];
-            question = currentLesson.options[currentLesson.CorrectAnswer];
+            question = currentLesson.lessons;
             CorrectAnswer = currentLesson.options[currentLesson.CorrectAnswer];
             textQuestion.text = question;
             for (int i = 0; i < currentLesson.options.Count; i++)
@@ -111,14 +111,14 @@ public class LevelManager : MonoBehaviour
         
         if (answerfromPlayer != 9)
         {
-            CheckButton.GetComponent<Button>().interactable = false;
+            CheckButton.GetComponent<Button>().interactable = true;
             CheckButton.GetComponent<Image>().color = Color.white;
             return true;
         }
         else
         {
             CheckButton.GetComponent<Button>().interactable = false;
-            CheckButton.GetComponent<Image>().color = Color.white;
+            CheckButton.GetComponent<Image>().color = Color.gray;
             return false;
         }
     }
