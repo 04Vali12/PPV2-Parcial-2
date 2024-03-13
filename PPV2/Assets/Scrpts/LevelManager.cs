@@ -32,10 +32,12 @@ public class LevelManager : MonoBehaviour
     [Header("Current Lesson")]
     public Leccion currentLesson;
 
-   
+   //Singleton que garantiza que una clase solo tenga una instancia
+   //y proporciona un punto de acceso 
 
     private void Awake()
     {
+        
         if (Instance != null)
         {
             return;
@@ -48,13 +50,17 @@ public class LevelManager : MonoBehaviour
 
     void Start()
     {
+        //Se establece la cantidad de preguntas que hay en la leccion para
+        //selecionarlas y actualizarlas
         questionAmount = Lesson.leccionList.Count;
+        // se le llama a la funcion para poder comprobar si ya se seleciono una opcion 
         LoadQuestion();
     }
 
-    // Update is called once per frame
+    // Esta funcion carga la siguiente pregunta
     public void LoadQuestion()
     {
+        //Asegura que la pregunta este dentro de los limites de la cantidad de preguntas asignadas
         if (currentQuestion < questionAmount)
         {
             currentLesson = Lesson.leccionList[currentQuestion];
@@ -79,6 +85,7 @@ public class LevelManager : MonoBehaviour
         {
             if (currentQuestion < questionAmount)
             {
+                
                 bool isCorrect = currentLesson.options[answerfromPlayer] == CorrectAnswer;
                 AnswerContainer.SetActive(true);
                 if (isCorrect)
